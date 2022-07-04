@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.scss';
-import {Header, Card, Drawer} from './components';
+import {Header, Drawer} from './components';
 import {Routes, Route, Link} from 'react-router-dom';
 import {Home, Registration, Login, NotFoundPage} from './components/pages';
 

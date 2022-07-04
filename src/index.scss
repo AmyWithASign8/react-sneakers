@@ -59,6 +59,20 @@ body {
     border: 1px solid #f3f3f3;
     border-radius: 10px;
     padding: 0 15px;
+    position: relative;
+    
+    .removeBtn{
+      opacity: 0.5;
+      position: absolute;
+      top: 2px;
+      right: -15px;
+      cursor: pointer;
+
+      &:hover{
+        opacity: 1;
+        transition: opacity 0.2s ease-in-out;
+      }
+    }
   }
   .inputStyles {
     border: 0;
@@ -135,7 +149,7 @@ body {
         div {
           flex: 1;
           height: 1px;
-          border-bottom: 1px dashed #c2c2c2;
+          border-bottom: 1px dashed #c5c5c5;
           position: relative;
           top: -4px;
           margin: 0 7px;
@@ -145,6 +159,10 @@ body {
   
     .greenButton {
       position: relative;
+  
+      &:disabled {
+        animation: button-loading 0.6s ease-in-out infinite;
+      }
   
       &:hover {
         img {

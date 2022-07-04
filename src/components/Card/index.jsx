@@ -8,6 +8,7 @@ function Card({title, price, imageUrl, onClick}) {
   const [activeLike, setActiveLike] = React.useState(false);
 
   const handleClickPlus = () => {
+        onClick(console.log({title, price, imageUrl}))
         setActivePlus(!activePlus);
   }
 
