@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import {Button} from './index';
 
 function Drawer(props) {
   return (
@@ -59,9 +60,9 @@ function Drawer(props) {
               <b>1074 руб. </b>
             </li>
           </ul>
-          <button className="greenButton">
-            Оформить заказ <img src="/img/arrow.svg" alt="Arrow" />
-          </button>
+            <Button>
+              Оформить заказ <img src="/img/arrow.svg" alt="Arrow" />
+            </Button>
         </div>
       </div>
     </div>
